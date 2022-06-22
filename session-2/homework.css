@@ -1,0 +1,23 @@
+.sidenav {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    background-color: #4b494b;
+    text-align: center;
+}
+.sidenav a {
+    display: block;
+    font-size: large;
+    text-decoration: none;
+    
+}
+.mainprofile {
+    margin-left: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.sidenav .credit {
+    margin-bottom: 10px;
+}
