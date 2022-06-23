@@ -1,0 +1,10 @@
+.message textarea {
+    resize: none;
+}
+.main a {
+    text-decoration: none;
+    color: #bbbbb9;
+}
+.main a:hover {
+    color: black;
+}
