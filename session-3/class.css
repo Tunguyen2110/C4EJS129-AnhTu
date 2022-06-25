@@ -1,0 +1,21 @@
+body {
+    background: cadetblue;
+}
+.mainborder {
+    display: flex;
+    margin: auto;
+    width: 80%;
+}
+.imgg {
+    width: 40%;
+}
+.detail {
+    width: 60%;
+    margin: 5px 5px 5px 20px;
+}
+.detail__content {margin-left: 10px;}
+.btn {
+    width: 100px;
+    height: 50px;
+    background: burlywood;
+}

@@ -1,0 +1,11 @@
+/* CSS here, use element tag here and # for id (#id) */
+
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Roboto:wght@100&display=swap');
+#p1 {
+  color: midnightblue;
+  font-size: 30px;
+}
+.custom-text {
+
+  text-decoration: underline;
+}
