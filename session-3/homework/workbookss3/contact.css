@@ -1,0 +1,23 @@
+.message textarea {
+    resize: none;
+}
+.main a {
+    text-decoration: none;
+    color: #bbbbb9;
+}
+.main a:hover {
+    color: black;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.avatar {
+    border-radius: 50%;
+}
+
+.fa-solid.fa-star {
+        background: -webkit-gradient(linear, left top, left bottom, from(white), to(yellow));
+        /* background: -webkit-gradient(); */
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
