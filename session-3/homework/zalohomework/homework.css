@@ -5,50 +5,56 @@
   } 
 
 /* CSS in Zalo Homework */
-
-* {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+body {
+    font-family: Merriweather;
 }
+
 .main {
+    padding: 10px;
     width: 50%;
     /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
 }
 
 .fakeimg {
     background: rgb(209, 209, 209);
-    width: 95%;
     height: 450px;
     align-items: center;
     justify-content: center;
 }
+
 .text {
     align-items: center;
     justify-content: center;
     display: flex;
     height: 100%;
-    font-size: 50px;
+    font-size: 40px;
     color: white;
-    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-weight: 100;
 }
+
 p {
-    line-height: 16px;
+    line-height: 20px;
     color: gray;
     font-size: small;
 }
+
 h2 {
     line-height: 30px;
 }
+
 h3 {
     line-height: 25px;
 }
+
 button {
     width: 150px;
     height: 50px;
     background: rgb(12, 162, 221);
     color: white;
-    margin-left: 30px;
+    margin: 5px 10px 0 0;
     font-style: bold;
 }
+
 button:hover {
     background: rgb(100, 38, 38);
 }
