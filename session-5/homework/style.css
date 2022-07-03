@@ -1,0 +1,52 @@
+.mainbox {
+    display: flex;
+    flex-direction: row;
+}
+.box {
+    background: #FFED9E;
+    display: flex;
+    flex-direction: row;
+}
+
+.box1-left .avatar {
+    width: 80%;
+    align-self: center;
+}
+.box1-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.contact {
+    display: flex;
+    align-items: flex-start;
+    margin: 10px;
+    justify-content: space-evenly;
+}
+
+.box1-right {
+    width: 50%;
+    display: flex;
+    text-align: center;
+    text-transform: capitalize;
+    flex-direction: column;
+}
+.language {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    line-height: 10px;
+}
+
+
+.name h3 {
+    height: 20%;
+}
+
+
+
+
+
+.box2 .left img {
+    width: 150px;
+}
