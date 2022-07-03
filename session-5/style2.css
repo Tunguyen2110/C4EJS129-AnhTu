@@ -1,0 +1,63 @@
+#latest_stuff a {
+  position: relative;
+  display: inline-block;
+  transition: opacity 0.25s;
+}
+
+.img-caption {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%; /* 50% from top */
+  left: 50%; /* 50% from left */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transform: translate(-50%, -50%) scale(0); /* to center the text, scale(0) to doesn't show text  */
+  transform-origin: center;
+  transition: 0.25s;
+}
+
+#latest_stuff a:hover .img-caption {
+  transform: translate(-50%, -50%) scale(1); /* to center the text, scale(1) to show text  */
+  transform-origin: center;
+  transition: 0.25s;
+}
+
+#latest_stuff a:hover img {
+  opacity: 0.5;
+}
+
+/* ------------ */
+.container img {
+  max-height: 400px;
+}
+.container a {
+  position: relative;
+  display: inline-block;
+  transition: opacity 0.25s;
+}
+.img-title {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%; /* 50% from top */
+  left: 50%; /* 50% from left */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transform: translate(-50%, -50%) scale(0); /* to center the text, scale(0) to doesn't show text  */
+  transform-origin: center;
+  transition: 0.25s;
+}
+
+.container a:hover img {
+  opacity: 0.5;
+}
+.container a:hover .img-title {
+  transform: translate(-50%, -50%) scale(1); /* to center the text, scale(0) to doesn't show text  */
+  transform-origin: top;
+  transition: 1s;
+}
