@@ -1,52 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+.name {
+    font-size: 55px;
+}
+
 .mainbox {
     display: flex;
     flex-direction: row;
 }
 .box {
-    background: #FFED9E;
+    background: #86A8E7;
     display: flex;
     flex-direction: row;
+    border-radius: 12px;
+    margin:10px;
+    width: 50%;
 }
 
-.box1-left .avatar {
-    width: 80%;
-    align-self: center;
+.imgbox {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+
 }
-.box1-left {
+
+.avatar {
+    width: 100%;
+    /* align-self: center; */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 20px;
+}
+
+.box-left {
     width: 50%;
     display: flex;
     flex-direction: column;
+    background: #ffdfba;
+    border-radius: 12px;
 }
+
 .contact {
     display: flex;
-    align-items: flex-start;
-    margin: 10px;
+    /* align-items: flex-start; */
+    margin-bottom: 30px;
     justify-content: space-evenly;
 }
 
-.box1-right {
+.box-right {
+    position: relative;
     width: 50%;
     display: flex;
     text-align: center;
     text-transform: capitalize;
     flex-direction: column;
+    padding-top: 15px;
 }
+.right {
+    margin: 10px 0px;
+}
+.job {
+    text-align: left;
+    font-size: xx-large;
+    padding-left: 15px;
+}
+.more-info {
+    text-align: left;
+    font-size: 35px;
+    padding-left: 15px;
+}
+
 .language {
     display: flex;
     align-items: flex-start;
-    justify-content: center;
-    line-height: 10px;
+}
+.speaks {
+    padding-right: 5px;
+}
+.social {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    bottom: 25px;
 }
 
-
-.name h3 {
-    height: 20%;
-}
-
-
-
-
-
-.box2 .left img {
-    width: 150px;
+i {
+    font-size: 25px;
 }
