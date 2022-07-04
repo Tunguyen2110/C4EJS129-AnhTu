@@ -81,12 +81,20 @@
     flex-direction: row;
     border-radius: 12px;
     margin: 10px;
-    width: 40%;
+    width: 48%;
 }
 
 .name {
   font-size: 30px;
 }
+.box-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  background: #ffdfba;
+  border-radius: 12px;
+}
+
 .imgbox {
   width: 100%;
   height: 90%;
@@ -103,13 +111,6 @@
   border-radius: 20px;
 }
 
-.box-left {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  background: #ffdfba;
-  border-radius: 12px;
-}
 
 .contact {
   display: flex;
