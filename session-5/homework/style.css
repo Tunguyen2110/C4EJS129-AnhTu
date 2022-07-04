@@ -1,98 +1,161 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Roboto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+/* header */
+.header {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+.left-header {
+  width: 10%;
+}
+/* left */
+.left-header p {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+/* mid */
+.searchbox {
+  width: 40%;
+  display: flex;
+  font-size: small;
+  align-items: center;
+  justify-content: center;
+  color: #ebebeb;
+  border: solid;
+  border-color: #ebebeb;
+  border-radius: 20px;
+}
+
+.searchbox i {
+  width: 10%;
+  font-size: medium;
+  text-align: center;
+}
+.searchbox input {
+  width: 90%;
+  border: none;
+}
+.searchbox input:focus {
+  outline: none;
+}
+
+/* right */
+.right-header {
+  width: 10%;
+}
+.right-header img {
+  border-radius: 50%;
+  width: 25px;
+}
+.right-header i {
+    margin-right: 10px;
+}
+
+/* end of header */
+
+.speakers {
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+    margin: 20px 0px;
+}
+.speakers h1 {
+    padding-left: 20px
+}
+
+/* ----------------------------- */
+.mainbox {
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+}
+.box {
+    background: #86a8e7;
+    display: flex;
+    flex-direction: row;
+    border-radius: 12px;
+    margin: 10px;
+    width: 40%;
 }
 
 .name {
-    font-size: 55px;
+  font-size: 30px;
 }
-
-.mainbox {
-    display: flex;
-    flex-direction: row;
-}
-.box {
-    background: #86A8E7;
-    display: flex;
-    flex-direction: row;
-    border-radius: 12px;
-    margin:10px;
-    width: 50%;
-}
-
 .imgbox {
-    width: 100%;
-    height: 90%;
-    display: flex;
-    justify-content: center;
-    padding: 30px;
-
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
 }
 
 .avatar {
-    width: 100%;
-    /* align-self: center; */
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    border-radius: 20px;
+  width: 100%;
+  /* align-self: center; */
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
 }
 
 .box-left {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    background: #ffdfba;
-    border-radius: 12px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  background: #ffdfba;
+  border-radius: 12px;
 }
 
 .contact {
-    display: flex;
-    /* align-items: flex-start; */
-    margin-bottom: 30px;
-    justify-content: space-evenly;
+  display: flex;
+  /* align-items: flex-start; */
+  margin-bottom: 30px;
+  justify-content: space-evenly;
 }
 
 .box-right {
-    position: relative;
-    width: 50%;
-    display: flex;
-    text-align: center;
-    text-transform: capitalize;
-    flex-direction: column;
-    padding-top: 15px;
+  position: relative;
+  width: 50%;
+  display: flex;
+  text-align: center;
+  text-transform: capitalize;
+  flex-direction: column;
+  padding-top: 15px;
 }
 .right {
-    margin: 10px 0px;
+  margin: 10px 0px;
 }
 .job {
-    text-align: left;
-    font-size: xx-large;
-    padding-left: 15px;
+  text-align: left;
+  font-size: 20px;
+  padding-left: 15px;
 }
 .more-info {
-    text-align: left;
-    font-size: 35px;
-    padding-left: 15px;
+  text-align: left;
+  font-size: 20px;
+  padding-left: 15px;
 }
 
 .language {
-    display: flex;
-    align-items: flex-start;
+  display: flex;
+  align-items: flex-start;
 }
 .speaks {
-    padding-right: 5px;
+  padding-right: 5px;
 }
 .social {
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    bottom: 25px;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  bottom: 25px;
 }
 
 i {
-    font-size: 25px;
+  font-size: 25px;
 }
