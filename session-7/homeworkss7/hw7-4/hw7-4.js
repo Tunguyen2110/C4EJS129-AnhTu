@@ -1,5 +1,6 @@
 console.log("Ex.4 - Rank check");
 let x = prompt("Input the average grade: ");
+x = Number(x);
 if (x >= 0 && x <= 10) {
   if (x < 5) {
     console.log("Rank F");

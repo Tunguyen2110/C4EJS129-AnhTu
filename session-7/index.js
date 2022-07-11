@@ -40,7 +40,6 @@
 // const sum = 1 + 2 + '3';
 // console.log(sum); // 33
 
-
 // let score = 99;
 // console.log(score++); // 99, not 101 - in trc, + sau
 // console.log(++score); //101, not 99 - + xong moi in
@@ -50,3 +49,26 @@
 // console.log(a==b); //true
 // console.log(a===b); //false
 
+// prompt va alert
+// prompt('nhap ma so ');
+
+let x = Number(prompt());
+// cach 1
+if (x > 10) {
+    console.log(x + ' >10 ne');
+} else {
+    if (x <10) {
+        console.log(x + ' <<<<<<<<      10 ne');
+    } else {
+        console.log(x + ' ===========10 ne');
+    }
+}
+
+// cach 2
+if (x > 10) {
+    console.log(x + ' >10 ne');
+} else if (x < 10) {
+    console.log(x + ' <<<<<<<<      10 ne');
+} else {
+    console.log(x + ' ===========10 ne');
+}

@@ -1,4 +1,5 @@
 let x = prompt("Nhap doanh so ban hang cua cong ty: ");
+x = Number(x);
 console.log(`Sales: ${x}`);
 if (x <= 100000000) {
   y = x * 0.05;
