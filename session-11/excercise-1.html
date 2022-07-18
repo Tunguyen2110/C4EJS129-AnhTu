@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <p>BT2: Dùng JS in ra màn hình các số từ 1-99 (gợi ý: dùng vòng lặp)</p>
+    <hr />
+
+    <div id="example"></div>
+  </body>
+
+  <script >
+        const ul = document.createElement('ul');
+
+    for (let i = 1; i < 100; i++) {
+        const li = document.createElement('li');
+        li.innerHTML = i;
+        ul.appendChild(li);
+    }
+
+    example.appendChild(ul);
+  </script>
+</html>
