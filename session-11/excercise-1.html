@@ -7,21 +7,30 @@
     <title>DOM</title>
   </head>
   <body>
-    <p>BT2: Dùng JS in ra màn hình các số từ 1-99 (gợi ý: dùng vòng lặp)</p>
-    <hr />
 
-    <div id="example"></div>
+    <p>BT1: Tạo 1 ô input và 1 button Click</p>
+    <p> -Khi click vào button lần 1 thì sẽ lấy dữ liệu từ ô input và hiển thị lên HTML <br>
+    - Khi click vào button lần 2 thì màu chữ đổi thành màu hồng <br>
+    - Khi click vào button lần 3 thì background đổi thành màu đen và ô input sẽ bị ẩn đi
+</p>
+  <input id="info" type="text">
+  <button onclick="print()">Click</button>
+  <p id="printtext"></p>
+
   </body>
 
   <script >
-        const ul = document.createElement('ul');
+    function print() {
+      let x = document.getElementById('info');
+      let newInfo = x.value;
 
-    for (let i = 1; i < 100; i++) {
-        const li = document.createElement('li');
-        li.innerHTML = i;
-        ul.appendChild(li);
-    }
+      if ( x == 0) {
+        alert('Empty');
+      } else {
+        document.getElementById('printtext').innerHTML = "Print: " + newInfo;
 
-    example.appendChild(ul);
+      }
+    };
   </script>
+
 </html>

@@ -7,33 +7,22 @@
     <title>DOM</title>
   </head>
   <body>
-    <!-- <p id="test1" class="test1">Test ID</p>
-    <div class="testClass">Test Class</div> -->
-    <div id="testClass" class="testClass">Test Class</div>
-    <p id="tagP" class="testClass">Test Query Selector</p>
-    <!-- <div id="tagDiv" class="testClass">Test Query Selector</div> -->
+    <p>BT2: Dùng JS in ra màn hình các số từ 1-99 (gợi ý: dùng vòng lặp)</p>
+    <hr />
+
+    <div id="example"></div>
   </body>
 
-  <script src="index.js">
-        // by id - return 1 element
-    const testId = document.getElementById('testId');
-    console.log('testId');
+  <script>
+    // by id - return 1 element
+    const ul = document.createElement("ul");
 
-    // by class - return array
+    for (let i = 1; i < 100; i++) {
+      const li = document.createElement("li");
+      li.innerHTML = i;
+      ul.appendChild(li);
+    }
 
-    const testClass = document.getElementsByClassName('testClass');
-    console.log('testClass');
-
-    //name tag
-    const tagP = document.getElementsByTagName('tagP');
-    console.log('tagP');
-
-    //querySelectorAll - ket hop dc ca id, class, nametag cung 1 luc || class: "." ; id: "#" ('')
-    // const 
-
-    //querySelector - ket hop dc ca id, class, nametag cung 1 luc
-
-
-    
+    example.appendChild(ul);
   </script>
 </html>
