@@ -7,30 +7,66 @@
     <title>DOM</title>
   </head>
   <body>
-
     <p>BT1: Tạo 1 ô input và 1 button Click</p>
-    <p> -Khi click vào button lần 1 thì sẽ lấy dữ liệu từ ô input và hiển thị lên HTML <br>
-    - Khi click vào button lần 2 thì màu chữ đổi thành màu hồng <br>
-    - Khi click vào button lần 3 thì background đổi thành màu đen và ô input sẽ bị ẩn đi
-</p>
-  <input id="info" type="text">
-  <button onclick="print()">Click</button>
-  <p id="printtext"></p>
+    <p>
+      -Khi click vào button lần 1 thì sẽ lấy dữ liệu từ ô input và hiển thị lên
+      HTML <br />
+      - Khi click vào button lần 2 thì màu chữ đổi thành màu hồng <br />
+      - Khi click vào button lần 3 thì background đổi thành màu đen và ô input
+      sẽ bị ẩn đi
+    </p>
+    <!-- <input id="info" type="text" />
+    <button id="btn" onclick="printText()">Click</button>
+    <p id="prinTtext"></p> -->
 
+    <input type="text" id="data" placeholder="Nhap du lieu" />
+    <button id="btn">Click</button>
+
+    <div id="print"></div>
   </body>
 
-  <script >
-    function print() {
-      let x = document.getElementById('info');
-      let newInfo = x.value;
-
-      if ( x == 0) {
-        alert('Empty');
-      } else {
-        document.getElementById('printtext').innerHTML = "Print: " + newInfo;
-
+  <script>
+    
+    let count = 1;
+    document.getElementById("btn").onclick = () => {
+      const data = document.getElementById("data").value;
+      const print = document.getElementById("print");
+      
+      if (count === 1) {
+        print.innerHTML = data;
+        count++;
+        console.log(count);
+      }
+      else if (count === 2) {
+        print.style.color = "pink";
+        count++;
+        console.log(count);
+      }
+      else if (count === 3) {
+        print.style.background = "black";
+        document.getElementById("data").style.display = "none";
+        count = 1;
       }
     };
-  </script>
 
+    // function printText() {
+    //   let x = document.getElementById("info");
+    //   let newInfo = x.value;
+
+    //   if (x == 0) {
+    //     alert("Empty");
+    //   } else {
+    //     document.getElementById("[prinTtext]").innerHTML = newInfo;
+    //   }
+    // }
+
+    // function changeColor() {
+    //   let x = document.getElementById('printtext');
+    //   printtext.style.color = 'pink';
+    //   document.getElementById('printtext').style.color =  changeColor();
+    // };
+
+    // btn.addEventListener ("click", printword());
+    // btn.addEventListener ("click", changeColor());
+  </script>
 </html>
